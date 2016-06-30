@@ -4,11 +4,15 @@ import {
   StatusBar,
   Text,
   View,
-  Platform
+  Platform,
+  StyleSheet
 } from 'react-native';
 
 import NavbarButton from './NavbarButton';
-import styles from './styles';
+
+const style_obj = require('./styles');
+const styles = StyleSheet.create(style_obj);
+//import styles from './styles';
 
 const ButtonShape = {
   title: PropTypes.string.isRequired,

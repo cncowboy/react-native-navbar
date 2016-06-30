@@ -3,9 +3,12 @@ import {
   Text,
   TouchableOpacity,
   View,
+  StyleSheet
 } from 'react-native';
 
-import styles from './styles';
+const style_obj = require('./styles');
+const styles = StyleSheet.create(style_obj);
+//import styles from './styles';
 
 export default class NavbarButton extends Component {
   render() {
